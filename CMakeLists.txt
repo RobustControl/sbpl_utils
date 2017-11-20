@@ -16,11 +16,10 @@ find_package(catkin REQUIRED)
 find_package(sbpl REQUIRED)
 
 catkin_package(
-    DEPENDS OpenCV
+    DEPENDS Boost OpenCV
     CATKIN_DEPENDS
     INCLUDE_DIRS include ${SBPL_INCLUDE_DIRS}
-    LIBRARIES ${PROJECT_NAME} ${SBPL_LIBRARIES}
-)
+    LIBRARIES ${PROJECT_NAME} ${SBPL_LIBRARIES})
 
 include_directories(
   ${Boost_INCLUDE_DIRS}
